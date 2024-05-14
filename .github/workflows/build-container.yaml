@@ -37,4 +37,4 @@ jobs:
       with:
         push: true
         platforms: ${{ env.CONTAINER_PLATFORMS }}
-        tags: ${{ steps.meta.output.tags }}
+        tags: ${{ steps.meta.outputs.tags }}
