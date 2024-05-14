@@ -1,5 +1,4 @@
 FROM debian:stable-slim
-LABEL org.opencontainers.image.source https://github.com/kab1r/netshoot
 
 RUN apt-get update \
  && apt-get install --yes ca-certificates curl gnupg lsb-release \
