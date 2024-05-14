@@ -5,8 +5,8 @@ env:
   CONTAINER_REGISTRY: ghcr.io
 on:
   push:
-    branches: [**]
-    tags: [v*, v*.*, v*.*.*]
+    branches: ['**']
+    tags: ['v*', 'v*.*', 'v*.*.*']
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
