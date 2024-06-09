@@ -20,6 +20,7 @@ RUN apt-get update \
       iperf3 \
       iproute2 \
       iptables \
+      iputils-ping \
       jq \
       less \
       nftables \
