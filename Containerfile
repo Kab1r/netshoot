@@ -29,6 +29,7 @@ RUN apt-get update \
       strace \
       swaks \
       tcptraceroute \
+      traceroute \
       unzip \
       vim \
       yq \
