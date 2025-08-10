@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM debian:testing-slim
 
 RUN apt-get update \
  && apt-get install --yes ca-certificates curl gnupg lsb-release \
@@ -33,6 +33,11 @@ RUN apt-get update \
       unzip \
       vim \
       yq \
+      postgresql-client \
+      ripgrep \
+      fzf \
+      fd-find \
+      du-dust \
  && curl https://sh.rustup.rs -sSf | sh -s -- -y \
  && sh -c ". ~/.cargo/env && cargo install eza" \
  && curl -fsSL https://starship.rs/install.sh | sh -s -- -y \
